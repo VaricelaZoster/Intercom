@@ -1,0 +1,15 @@
+import React from 'react'
+import InboxHeader from '../assets/InboxHeader'
+import InboxInfo from '../assets/InboxInfo'
+
+const Inbox = () => {
+  return (
+    <div className='flex-auto w-[20%]'>
+        <InboxHeader/>
+        <InboxInfo/>
+        Inbox
+    </div>
+  )
+}
+
+export default Inbox
