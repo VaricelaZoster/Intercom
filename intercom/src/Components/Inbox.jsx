@@ -5,7 +5,7 @@ import InboxChatInfo from '../assets/InboxChatInfo'
 
 const Inbox = () => {
   return (
-    <div className='flex-auto w-[20%]'>
+    <div className='flex-auto w-[20%] min-w-[73px]'>
         <InboxHeader/>
         <InboxInfo/>
         <InboxChatInfo/>
