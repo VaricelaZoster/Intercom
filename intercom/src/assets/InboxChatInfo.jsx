@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ChatProfile from '../ChatAssets/ChatProfile'
+import ChatProfile from '../InboxInfo/ChatProfile'
 
 const InboxChatInfo = () => {
   const [activeIndex, setActiveIndex] = useState(null);

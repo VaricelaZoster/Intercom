@@ -5,7 +5,7 @@ import AIChat from './Components/AIChat'
 
 const App = () => {
   return (
-    <div className = "flex flex-row h-screen">
+    <div className = "flex flex-row h-screen min-w-[325px]">
       <Inbox/>
       <Chat/>
       <AIChat/>
