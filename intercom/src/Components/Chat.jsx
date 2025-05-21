@@ -11,7 +11,7 @@ const Chat = () => {
         <div className='flex-1 overflow-y-auto'>
           <ChatHistory/>
         </div>
-        <div className='flex justify-center items-center h-30 bg-yellow-200 p-4'>
+        <div className='flex justify-center items-center h-30  p-4'>
           <ChatEntry/>
         </div>
       </div>
