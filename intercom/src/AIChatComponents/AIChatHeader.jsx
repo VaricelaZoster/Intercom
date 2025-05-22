@@ -1,10 +1,19 @@
 import React, { useState } from 'react'
 import { TbLayoutSidebar } from "react-icons/tb";
-import AIChatSidebar from './AIChatSidebar';
+import {Drawer , List, ListItem, ListItemButton } from '@mui/material'
 
 const AIChatHeader = () => {
   const [selected, setSelected] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+
+  let settings = [
+    "Lorem",
+    "ipsum", 
+    "dolor sit",
+    "amet consectetur adipisicing", 
+    "elit."
+  ]
+
   return (
     <div className={`flex justify-between overflow-x-hidden flex-auto gap-3 border-b-1 border-gray-100 pl-3 `}>
       <div className='flex flex-auto gap-3 pl-2 items-center'>
@@ -21,14 +30,26 @@ const AIChatHeader = () => {
         Details
       </div>
       </div>
-      <div onClick={() => setIsVisible(!isVisible)} className='flex flex-auto justify-end items-center pr-5 '>
-        <TbLayoutSidebar className='h-9 w-9 hover:bg-gray-200 p-1 rounded-md transition duration-150 ease-linear'/>
+      <div className='relative flex flex-auto justify-end items-center pr-5 '>
+        <TbLayoutSidebar onClick={() => setIsVisible(!isVisible)} className='h-9 w-9  hover:bg-gray-200 p-1 rounded-md transition duration-150 ease-linear'/>
       </div>
-      {
-        isVisible && (
-          <AIChatSidebar/>
-        )
-      }
+       <Drawer sx={{backgroundColor:'transparent'}} open={isVisible} anchor="right">
+        <div className='flex flex-col w-100'>
+          <div className='flex flex-row justify-end p-4 pr-5 '>
+            <TbLayoutSidebar className='h-9 w-9 p-1 hover:bg-gray-200 rounded-md transition duration-150 ease-linear' onClick={() => setIsVisible(!isVisible)}/>
+          </div>
+          <div className=''>
+            <List>
+              {settings.map((setting, index) => (
+                <ListItem key={index} disablePadding>
+                  <ListItemButton>
+                    {setting}
+                  </ListItemButton>
+                </ListItem>))}
+            </List>
+          </div>
+        </div>
+       </Drawer>
     </div>
   )
 }
