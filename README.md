@@ -8,7 +8,6 @@ This project is a modern, responsive chat application built with React and Vite.
 
 - **Inbox**: View and select conversations from a list of chats.
 - **Chat**: Engage in real-time conversations with users.
-- **AI Copilot**: Access an AI assistant for smart replies, suggestions, or help. The AI Copilot panel is only visible on screens wider than 570px for optimal usability.
 - **Responsive Design**: The layout adapts to different screen sizes, hiding the AI Copilot on smaller devices.
 - **Sidebar Toggle**: Easily show or hide the sidebar using the sidebar button in the header.
 - **Modern UI**: Utilizes Tailwind CSS for a sleek, modern look with gradient effects and interactive elements.
@@ -34,8 +33,9 @@ intercom/
 ## Getting Started
 
 ### Prerequisites
-- Node.js (v16 or higher recommended)
 - npm or yarn
+- Vite (Latest version)
+- Tailwind CSS (v4.1 or above)
 
 ### Installation
 1. Clone the repository:
