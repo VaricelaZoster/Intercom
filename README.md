@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a modern, responsive chat application built with React and Vite. It features an AI-powered chat assistant (AI Copilot), a user inbox, and a chat interface, all designed with a clean, intuitive UI. The application demonstrates component-based architecture, state management, and responsive design using Tailwind CSS.
+This project is a modern, responsive chat application built with React and Vite. The application demonstrates component-based architecture, state management, and responsive design using Tailwind CSS.
 
 ## Features
 
