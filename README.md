@@ -40,7 +40,7 @@ intercom/
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/VaricelaZoster/Intercom.git
    cd intercom
    ```
 2. Install dependencies:
