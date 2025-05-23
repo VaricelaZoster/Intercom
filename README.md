@@ -30,6 +30,10 @@ intercom/
 └── README.md
 ```
 
+## Deployment
+
+Deployed using [Vercel](https://intercom-ten.vercel.app/)
+
 ## Getting Started
 
 ### Prerequisites
