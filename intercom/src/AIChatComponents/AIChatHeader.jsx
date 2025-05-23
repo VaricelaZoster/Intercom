@@ -15,7 +15,7 @@ const AIChatHeader = () => {
   ]
 
   return (
-    <div className={`flex justify-between overflow-x-hidden flex-auto gap-3 border-b-1 border-gray-100 pl-3 `}>
+    <div className={`flex justify-between overflow-x-hidden flex-auto gap-3 border-b-1 border-gray-100 pl-3 bg-amber-100 min-w-[100px]`}>
       <div className='flex flex-auto gap-3 pl-2 items-center'>
         <div
         className={`relative flex items-center bg-amber-300 font-semibold cursor-pointer h-16 px-1 bg-gradient-to-r from-blue-900 to-violet-500 to-80% bg-clip-text text-transparent border-b-2 border-transparent after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:rounded after:pointer-events-none ${selected ? 'after:bg-gradient-to-r after:from-blue-800 after:to-violet-500 after:h-0.5' : 'after:bg-transparent'}`}

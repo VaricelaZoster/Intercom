@@ -8,7 +8,7 @@ const App = () => {
     <div className = "flex flex-row h-screen min-w-[325px]">
       <Inbox/>
       <Chat/>
-      <AIChat/>
+        <AIChat/>
     </div>
   )
 }
